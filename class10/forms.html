@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+    <style>
+      fieldset {
+        height: 500px;
+        border: 1px solid blanchedalmond;
+        padding: 50px 20px;
+      }
+
+      fieldset legend {
+        border: 1px solid bisque;
+        padding: 10px 20px;
+      }
+
+      fieldset input {
+        box-shadow: 2px 5px 10px black;
+        width: 50%;
+        height: 20%;
+        border-radius: 10px;
+        border: none;
+      }
+      fieldset label{
+        width: 100px;
+        display: inline-block;
+      }
+      #btn {
+        /* width: 20px; */
+        width: 10%;
+        height:10%;
+        margin-left: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" /><br /><br />
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" /><br /><br />
+        <input type="submit" value="Submit" id="btn"/>
+      </fieldset>
+    </form>
+  </body>
+</html>
